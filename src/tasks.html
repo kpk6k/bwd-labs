@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Задачи</title>
+    <link rel="icon" href="./assets/icons/favicon.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img 
+            src="./assets/icons/header-logo.png"
+            alt="header-logo" 
+            onclick="showTemporaryText(this, 'Лучший таск менеджер!', 'right')" 
+            />
+            <span class="text">
+                <h1>Таск-мастер3000!</h1>
+            </span>
+        </div>
+    </header>
+    <nav>
+        <a href="./index.html">
+            <img src="./assets/icons/home.svg" alt="home_icon" id="svg" />
+            Главная
+        </a>
+        <a href="./projects.html">
+            <img src="./assets/icons/projects.svg" alt="projects_icon" id="svg" />
+            Проекты
+        </a>
+        <a class="active" href="./tasks.html">
+            <img src="./assets/icons/tasks.svg" alt="tasks_icon" id="svg" />
+            Список задач
+        </a>
+        <a href="./about.html">
+            <img src="./assets/icons/help.svg" alt="help_icon" id="svg" />
+            О приложении
+        </a>
+        <button>
+            <img src="./assets/icons/menu.svg" alt="menu_icon" id="svg" />
+        </button>
+    </nav>
+    <div class="sidebar">
+        <nav>
+            <a href="./index.html">
+                <img src="./assets/icons/home.svg" alt="home_icon" id="svg" />
+                Главная
+            </a>
+            <a href="./projects.html">
+                <img src="./assets/icons/projects.svg" alt="projects_icon" id="svg" />
+                Проекты
+            </a>
+            <a class="active" href="./tasks.html">
+                <img src="./assets/icons/tasks.svg" alt="tasks_icon" id="svg" />
+                Список задач
+            </a>
+            <a href="./about.html">
+                <img src="./assets/icons/help.svg" alt="help_icon" id="svg" />
+                О приложении
+            </a>
+        </nav>
+    </div>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Задачи</th>
+                    <th>В работе</th>
+                    <th>Выполненные</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="taskList" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                    <td id="inProgressList" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                    <td id="completedList" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="smallButtons">
+            <button id="addTaskButton" title="Добавить задачу">
+                <img src="./assets/icons/add.svg" alt="add_icon" />
+            </button>
+        </div>
+    </main>
+
+    <input type="file" id="icsFileInput" style="display: none;" accept=".ics"/>
+
+    <script src="bundle.js"></script>
+</body>
+
+</html>

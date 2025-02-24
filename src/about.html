@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>О приложении</title>
+    <link rel="icon" href="./assets/icons/favicon.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img 
+            src="./assets/icons/header-logo.png"
+            alt="header-logo" 
+            onclick="showTemporaryText(this, 'Лучший трекер задач!', 'right')" 
+            />
+            <span class="text">
+                <h1>Таск-Мастер3000!</h1>
+            </span>
+        </div>
+    </header>
+    <nav>
+        <a href="./index.html">
+            <img src="./assets/icons/home.svg" alt="home_icon" id="svg" />
+            Главная
+        </a>
+        <a href="./projects.html">
+            <img src="./assets/icons/projects.svg" alt="projects_icon" id="svg" />
+            Проекты
+        </a>
+        <a href="./tasks.html">
+            <img src="./assets/icons/tasks.svg" alt="tasks_icon" id="svg" />
+            Список задач
+        </a>
+        <a class="active" href="./about.html">
+            <img src="./assets/icons/help.svg" alt="help_icon" id="svg" />
+            О приложении
+        </a>
+        <button>
+            <img src="./assets/icons/menu.svg" alt="menu_icon" id="svg" />
+        </button>
+    </nav>
+    <div class="sidebar">
+        <nav>
+            <a href="./index.html">
+                <img src="./assets/icons/home.svg" alt="home_icon" id="svg" />
+                Главная
+            </a>
+            <a href="./projects.html">
+                <img src="./assets/icons/projects.svg" alt="projects_icon" id="svg" />
+                Проекты
+            </a>
+            <a href="./tasks.html">
+                <img src="./assets/icons/tasks.svg" alt="tasks_icon" id="svg" />
+                Список задач
+            </a>
+            <a class="active" href="./about.html">
+                <img src="./assets/icons/help.svg" alt="help_icon" id="svg" />
+                О приложении
+            </a>
+        </nav>
+    </div>
+    <main>
+        <div class="wrap">
+            <span class="text">
+                <h1>Таск-Мастер3000!</h1>
+                Таск-мастер3000 — гениальное изобретение, созданное, чтобы навсегда избавить человечество от прокрастинации! Этот трекер не только напоминает о задачах с помощью лазерных голограмм, но и гипнотизирует вас до состояния сверхпродуктивности, автоматически генерирует оправдания для начальника, а ещё превращает скучные дела в квесты с босс-файтами против виртуального Златого Менеджера. Внимание: побочные эффекты включают спонтанную организацию шкафов и неконтролируемое желание составлять списки списков.
+            </span> 
+        </div>
+    </main>
+
+    <script src="bundle.js"></script>
+</body>
+
+</html>
